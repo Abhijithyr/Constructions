@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Link directly to your sitemap file
+Sitemap: https://rsconstruction.homes/sitemap.xml    
