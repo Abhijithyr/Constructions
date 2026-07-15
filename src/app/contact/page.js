@@ -152,7 +152,7 @@ function ContactForm() {
         </label>
         <input 
           type="text" 
-          placeholder="e.g. Rahul Kumar" 
+          placeholder="Enter Your Name" 
           className="w-full px-4 py-3 border border-neutral-200 bg-neutral-50/50 focus:bg-white rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all text-neutral-800" 
           required 
         />
