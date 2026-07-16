@@ -83,7 +83,7 @@ export default function Footer() {
             <div className="pt-2 w-full">
                 <div className="w-full h-44 rounded-xl overflow-hidden border border-neutral-200 shadow-sm relative bg-neutral-50">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0016483506164!2d77.610116!3d12.971598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjciTiA3N8KwMzYnMzYuNCJF!5e0!3m2!1sen!2sin!4v1719840000000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10582.932740303322!2d77.48116827052112!3d12.942282263530036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f00760b486f%3A0xc6dd2a56c61259!2sR%20S%20Construction!5e1!3m2!1sen!2sin!4v1777630159767!5m2!1sen!2sin" 
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
