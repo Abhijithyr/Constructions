@@ -22,6 +22,8 @@ export default function Header() {
   const currentPath = usePathname();
 
   return (
+    
+
     <header className="fixed top-0 left-0 right-0 h-20 bg-brand-surface/90 backdrop-blur-md border-b border-neutral-100 z-50">
       <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 sm:px-6 lg:px-8">
 
@@ -32,7 +34,7 @@ export default function Header() {
             width={300}             
             height={100}       
             priority     
-            className="w-auto h-10 sm:h-14 md:h-16 lg:h-20 object-contain transition-all" 
+            className="w-auto h-16 sm:h-16 md:h-16 lg:h-20 object-contain transition-all" 
           />
         </Link>
 

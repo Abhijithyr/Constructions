@@ -75,7 +75,7 @@ export default function Footer() {
             <li className="flex items-start gap-3">
               <Clock className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
               <div>
-                <p className="font-medium text-brand-text">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                <p className="font-medium text-brand-text">Mon - Sat: 10:00 AM - 08:00 PM</p>
                 <p className="text-xs text-neutral-400 mt-0.5">Sunday: Emergency On-Site Calls Only</p>
               </div>
             </li>
