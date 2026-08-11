@@ -102,7 +102,7 @@ const packagesData = [
     id: "residential-package-premium",
     main: "Residential Building Package (Concrete Blocks)",
     title: "Premium Package",
-    price: "Rs. 2,200/sq ft",
+    price: "Rs. 2,250/sq ft",
     badge: "Elite Quality",
     badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
     highlights: [
@@ -124,7 +124,7 @@ const packagesData = [
       },
       {
         title: "Doors & Windows",
-        items: ['Main door - 6"X4" Ghana teak wood frame, shutter thickness of 32mm of price up to ₹50,000', 'Pooja Room - 5"X3" Teak wood frame and solid flush door of price up to ₹30,000', 'Internal Doors - 5"X3" Sal wood frame and solid flush door of price up to ₹20,000', "Toilet Doors - WPC doors of price up to ₹10,000", "Windows - UPVC or Teak wood"],
+        items: ['Main door - 6"X4" Teak Wood frame, shutter thickness of 32mm of price up to ₹50,000', 'Pooja Room - 5"X3" Teak wood frame and solid flush door of price up to ₹30,000', 'Internal Doors - 5"X3" Sal wood frame and solid flush door of price up to ₹20,000', "Toilet Doors - WPC doors of price up to ₹10,000", "Windows - UPVC or Teak wood"],
       },
       {
         title: "Painting",
@@ -233,7 +233,7 @@ export default function ClientPackages() {
           {/* IMAGE INTEGRATION FOR VISUAL TRUST */}
           <div className="relative h-[200px] sm:h-[300px] md:h-[350px] lg:h-[280px] xl:h-[320px] w-full rounded-2xl overflow-hidden shadow-md border border-neutral-200">
             <Image 
-              src="/images/Galleryimg-1.jpeg"
+              src="/images/Galleryimg-1.webp"
               alt="Modern residential structural framework showing accurate house construction process"
               fill
               sizes="(max-w-1024px) 100vw, 40vw"

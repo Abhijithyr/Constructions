@@ -4,6 +4,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { HardHat, ShieldCheck, Award, ChevronRight, Link } from 'lucide-react';
+import Head from 'next/head';
 
 const coreValues = [
   {
@@ -27,11 +28,11 @@ export default function AboutPage() {
   return (
     <>
       {/* SAFE NEXT.JS HEAD SYSTEM */}
-      {/* <Head>
+      <Head>
         <title>About RS Constructions | Leading Civil Engineers & Builders in Bangalore</title>
         <meta name="description" content="Discover the heritage of RS Constructions. We provide premium villa elevations, commercial multi-level framing, and heavy-duty structural concrete casting across Bangalore." />
         <meta name="keywords" content="RS Constructions Bangalore, civil contractors Whitefield, premium villa builders HSR Layout, structural engineering experts" />
-      </Head> */}
+      </Head>
 
       <main className="min-h-screen bg-white font-sans antialiased text-neutral-800">
         
@@ -61,7 +62,7 @@ export default function AboutPage() {
             className="relative h-80 sm:h-96 lg:h-[480px] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100 shadow-xs"
           >
             <Image 
-              src="/images/Package-4.png" 
+              src="/images/Package-4.webp" 
               alt="RS Constructions active structural concrete site inspection"
               fill
               priority

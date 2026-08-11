@@ -42,35 +42,20 @@ export default function Home() {
             className="h-64 sm:h-96 rounded-2xl overflow-hidden shadow-xl border border-neutral-100 relative bg-neutral-200"
           >
             <Image 
-              src="/images/gallerynew.jpeg" // <-- Replace with your actual image path or public URL
-              alt="Architect working on a house construction blueprint" 
+              src="/images/gallerynew.webp"
+              alt="Architect working on a house construction blueprint"
               fill
-              sizes="(max-w-7xl) 50vw, 100vw"
-              priority={true} // High-priority loading for above-the-fold layout content
-              className="w-full h-full object-cover"
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+              className="object-cover"
             />
           </motion.div>
         </div>
       </section>
 
-      {/* 2. CORE METRICS & TRUST BADGES SECTION */}
-      {/* <section className="py-16 bg-white border-y border-neutral-100 px-4 sm:px-6 lg:px-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { value: "150+", label: "Completed Projects" },
-            { value: "25+", label: "Premium Villas" },
-            { value: "100%", label: "Material Transparency" },
-            { value: "0", label: "Hidden Overheads" }
-          ].map((stat, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }} className="space-y-1">
-              <h3 className="text-3xl sm:text-4xl font-black text-brand-accent">{stat.value}</h3>
-              <p className="text-xs sm:text-sm font-medium text-brand-muted uppercase tracking-wider">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section> */}
 
-      {/* 3. WHY CHOOSE US SECTION */}
+      {/* 2. WHY CHOOSE US SECTION */}
       <section className="py-20 px-4 sm:px-6 lg:px-16 bg-brand-bg">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -94,7 +79,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. THE 4-STEP BUILDING PROCESS SECTION */}
+      {/* 3. THE 4-STEP BUILDING PROCESS SECTION */}
       <section className="py-20 px-4 sm:px-6 lg:px-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-left max-w-xl mb-16 space-y-2">
@@ -119,7 +104,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. PACKAGES & PRICING SECTION (Links directly to cost estimator) */}
+      {/* 4. PACKAGES & PRICING SECTION (Links directly to cost estimator) */}
       <section id="packages" className="py-20 px-4 sm:px-6 lg:px-16 bg-brand-bg scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -128,7 +113,7 @@ export default function Home() {
             <p className="text-sm sm:text-base text-brand-muted">Select a standard specifications profile that fits your structural and material goals.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {[
               {
                 name: "Basic Structure Package",
@@ -142,6 +127,13 @@ export default function Home() {
                 desc: "Perfect for premium multi-floor residential apartments and urban family residential layouts.",
                 features: ["Premium Anti-Corrosive Treated Steel", "High-Performance Waterproof Plastering", "Premium Vitrified Floor Tiling", "Modular Kitchen Provision Setup", "Concealed Plumbing Layout Channels"],
                 popular: true
+              },
+              {
+                name: "Premium Residential Package",
+                price: "2,250",
+                desc: "Designed for elegant premium homes with enhanced finishes, superior construction quality, and long-lasting durability for modern families.",
+                features: ["Ultra-Premium Fe-550D TMT Steel Bars","High-Grade Waterproof Cement Plastering", "Premium Double-Charged Vitrified Flooring","Branded CP & Sanitary Fittings", "Premium Modular Kitchen with Granite Countertop",],
+                
               },
               {
                 name: "Premium Luxury Villa Package",

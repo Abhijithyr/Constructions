@@ -24,21 +24,21 @@ const services = [
   {
     title: "Residential Construction",
     desc: "Dream homes tailored to you—premium furnished and semi-furnished options built with high-grade materials and lifetime structural reliability.",
-    image: "/images/Package-1.png",
+    image: "/images/Package-1.webp",
     alt: "RS Constructions Residential Construction project showing modern architectural framing",
     tag: "Homes & Apartments"
   },
   {
     title: "Commercial Construction",
     desc: "Spaces that inspire business. Structured planning, optimized floor configurations, and reliable execution engineered for maximum utility.",
-    image: "/images/commercial-package.png",
+    image: "/images/commercial-package.webp",
     alt: "RS Constructions Commercial Construction showing structural office layout skeleton",
     tag: "Corporate & Retail"
   },
   {
     title: "Villa Construction",
     desc: "Luxury living redefined. Custom high-end villas designed meticulously around your lifestyle, featuring superior space utilization and architectural elegance.",
-    image: "/images/Package-4.png",
+    image: "/images/Package-4.webp",
     alt: "RS Constructions Villa Construction showing premium elevation design",
     tag: "Luxury Estates"
   },

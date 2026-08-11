@@ -32,8 +32,7 @@ export default function CostEstimator() {
     },
     Villa_Package: {
       basic: 2500,
-      // standard: 2800, // Added safe fallbacks to prevent NaN errors
-      // premium: 3200,
+      
     },
   };
 
@@ -90,19 +89,19 @@ export default function CostEstimator() {
     setShowCosts(true);
 
     const emailBodyMessage = `
-Name: ${formData.name}
-Phone: ${formData.phone}
-Email: ${formData.email}
-Site Location: ${formData.address}
-Built Area: ${formData.area} sq.ft
-Compound Perimeter: ${formData.areaOfCompound} sq.ft
-Selected Profile: ${formData.selectedPackage}
+        Name: ${formData.name}
+        Phone: ${formData.phone}
+        Email: ${formData.email}
+        Site Location: ${formData.address}
+        Built Area: ${formData.area} sq.ft
+        Compound Perimeter: ${formData.areaOfCompound} sq.ft
+        Selected Profile: ${formData.selectedPackage}
 
--- RUNTIME CALCULATION SHEET SUMMARY --
-Basic Tier Projection: ₹${newCosts.basic.toLocaleString('en-IN')}
-Standard Tier Projection: ₹${newCosts.standard.toLocaleString('en-IN')}
-Premium Tier Projection: ₹${newCosts.premium.toLocaleString('en-IN')}
-    `;
+        -- RUNTIME CALCULATION SHEET SUMMARY --
+        Basic Tier Projection: ₹${newCosts.basic.toLocaleString('en-IN')}
+        Standard Tier Projection: ₹${newCosts.standard.toLocaleString('en-IN')}
+        Premium Tier Projection: ₹${newCosts.premium.toLocaleString('en-IN')}
+            `;
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -209,8 +208,8 @@ Premium Tier Projection: ₹${newCosts.premium.toLocaleString('en-IN')}
                 <label htmlFor="selectedPackage" className="text-xs font-bold uppercase tracking-wider text-brand-muted">Structural Blueprint Profile</label>
                 <select id="selectedPackage" value={formData.selectedPackage} onChange={handlePackageChange} className="w-full px-4 py-3 rounded-xl border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-brand-accent/20 focus:border-brand-accent text-sm text-brand-text transition-all bg-neutral-50/50 appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23737373%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:16px] bg-[right_14px_center] bg-no-repeat" required>
                   <option value="">-- Click to Select Architecture Category --</option>
-                  <option value="Residential_Building_Packages_Concrete_Blocks">Residential Block Framework (Concrete Profiles)</option>
-                  <option value="Villa_Package">Premium Architectural Villa Framework Matrix</option>
+                  <option value="Residential_Building_Packages_Concrete_Blocks">Residential Packages (Concrete Blocks)</option>
+                  <option value="Villa_Package">Villa Package</option>
                 </select>
               </div>
 
